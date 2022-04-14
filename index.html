@@ -1,0 +1,150 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Form</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">Header</header>
+			<main class="page">
+				<div class="page__appointment appointment ">
+					<div class="appointment__container">
+						<div class="appointment__body">
+							<h2 class="appointment__subtitle subtitle">Make an appointment</h2>
+							<form action="get" class="form">
+								<div class="form__content">
+									<div class="form__item">
+										<input type="text" class="form__input" name="username" placeholder="Name">
+									</div>
+									<div class="form__item">
+										<input type="email" class="form__input" name="email" placeholder="Email" required>
+									</div>
+									<div class="form__item">
+										<input type="number" class="form__input" name="phone-number" placeholder="Phone Number">
+									</div>
+									<div class="form__item">
+										<select name="services" class="form__services">
+											<option value="none">Select Service</option>
+											<option value="Pet Training">Pet Training</option>
+											<option value="Pet Daycare">Pet Daycare</option>
+											<option value="Pet Boarding (No Cages)">Pet Boarding (No Cages)</option>
+											<option value="Pet Day Spa & Grooming">Pet Day Spa & Grooming</option>
+										</select>
+									</div>
+									<div class="form__item textarea">
+										<textarea class="textarea__item" name="text"
+											placeholder="Tell us about your puppers include his/her name"></textarea>
+									</div>
+									<div class="form__item button-form">
+										<button class="button-form__item" type="submit">Make an Appointment</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- /.appointment__body -->
+					</div>
+				</div>
+				<div class="page__summary summary ">
+					<div class="summary__container">
+						<div class="summary__body">
+							<h2 class="summary__title">Summary</h2>
+							<h3 class="summary__subtitle">Estimate Shipping and Tax</h3>
+							<p class="summary__text">Enter your destination to get a shipping estimate.</p>
+							<form action="get" class="form-summary">
+								<div class="form-summary__country">
+									<label  class="form-summary__label">Country</label>
+									<select name="country" class="form-summary__select">
+										<option value="Azerbaijan">Azerbaijan</option>
+										<option value="Australia">Australia</option>
+										<option value="Turkey">Turkey</option>
+										<option value="Ukraine">Ukraine</option>
+									</select>
+								</div>
+								<!-- /.form-summary__country -->
+								<div class="form-summary__state">
+									<label for="state" class="form-summary__label">State/Province</label>
+									<input id="state" name="state" type="text" class="form-summary__input">
+								</div>
+								<!-- /.form-summary__state -->
+								<div class="form-summary__zip">
+									<label for="zip-code" class="form-summary__label">Zip/Postal Code</label>
+									<input id="zip-code" name="zip-code" type="text" class="form-summary__input">
+								</div>
+								<!-- /.form-summary__zip -->
+								<div class="form-summary__standart-rate">
+									<label class="form-summary__label">Standard Rate</label>
+									<div class="radiobuttons">
+										<div class="radiobuttons__item">
+											<input id="radio-button_1" type="radio" name="rate" class="radiobuttons__input" checked>
+											<label for="radio-button_1" class="radiobuttons__label">Price may vary depending on the
+												item/destination. Shop Staff will contact you. $21.00</label>
+										</div>
+										<!-- /.radiobuttons__item -->
+									</div>
+									<!-- /.radiobuttons -->
+								</div>
+								<!-- /.form-summary__standart-rate -->
+								<div class="form-summary__pick">
+									<label class="form-summary__label">Pickup from store</label>
+									<div class="radiobuttons">
+										<div class="radiobuttons__item">
+											<input id="radio-button_2" type="radio" name="rate" class="radiobuttons__input" >
+											<label for="radio-button_2" class="radiobuttons__label">1234 Street Adress City Address,
+												1234 $0.00</label>
+										</div>
+										<!-- /.radiobuttons__item -->
+									</div>
+									<!-- /.radiobuttons -->
+								</div>
+								<!-- /.form-summary__pick -->
+								<h3 class="summary__subtitle">Apply Discount Code</h3>
+								<div class="form-summary__discount">
+									<label for="discount-code" class="form-summary__label ">Enter discount code</label>
+									<input id="discount-code" name="discount-code" type="text" placeholder="Enter discount code" class="form-summary__input">
+								</div>
+								<!-- /.form-summary__discount -->
+								<button type="submit" class="summary-button">Apply Discount</button>
+							</form>
+							<!-- /.form-summary -->
+						</div>
+						<!-- /.summary__body -->
+					</div>
+					<!-- /.summary__container -->
+				</div>
+				<!-- /.summary -->
+				<div class="login">
+					<div class="login__container">
+						<div class="login__body">
+							<h2 class="login__title">Registered Customers</h2>
+							<p class="login__text">If you have an account, sign in with your email address.</p>
+							<form class="form-login" action="get">
+								<div class="form-login__email">
+									<label for="username" class="form-login__label">Email</label>
+									<input required id="username" name="username" type="email" class="form-login__input" placeholder="Your Name">
+								</div>
+								<!-- /.form-login__email -->
+								<div class="form-login__password">
+									<label for="userpassword" class="form-login__label">Password</label>
+									<input required id="userpassword" name="userpassword" type="password" class="form-login__input" placeholder="Your Password">
+								</div>
+								<!-- /.form-login__password -->
+								<div class="form-login__footer">
+									<button type="submit" class="form-login__button">Sign In</button>
+									<a href="#" class="form-login__link">Forgot Your Password?</a>
+								</div>
+								<!-- /.form-login__footer -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">Footer</footer>
+		</div>
+	</body>
+
+	</html>
